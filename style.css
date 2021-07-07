@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Head section */
+
+#head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+/* Title section */
+#title{
+    font-size: 1.3rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 8px 4px black ;    
+}
+body{
+    background-color: blue;   
+}
+#todo{
+    position: absolute;
+    border: 2px solid white;
+    max-width: 500px;
+    transform: translate(-50%);
+    left: 50%;
+    width: 40%;
+}
+#input{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+#btn{
+    border-radius: 10px;
+    color: white;
+    font-weight: 1000;
+    border: none;
+    padding: 10px;
+    background-color: blue;
+}
+#input input{
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#input input:focus{
+    outline: none;
+    border: 2px rgb(21, 27, 121) solid;
+}
+
+#list{
+    background-color: white;
+    min-height: 50px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.lists{
+    padding: 10px;
+    display: flex;
+    border-bottom: 10px blue solid;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.delbtn{
+    padding: 3px 5px;
+    color: white;
+    font-weight: 1000;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
+.completed{
+    text-decoration: line-through;
+}
+.done{
+    margin-right: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 1000;
+    border: none;
+    padding: 5px;
+    background-color: blue;
+}
+
+/* Responsive */
+
+@media (max-width:1000px) {
+#input{
+    flex-direction: column;
+}
+#btn{
+    width: 40%;
+    margin-top: 10px;
+}
+.lists{
+    padding: 10px;
+    padding-left: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.lists div{
+    margin-top: 5px;
+}
+
+}

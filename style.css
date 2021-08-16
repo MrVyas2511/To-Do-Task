@@ -23,15 +23,58 @@
     justify-content: center;
 }
 
+/* Clear all Section */
+ #clrAll{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px 20px;
+     background-color: thistle;
+ }
+
+#clear{
+    background-color: blue;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+
+
+/* Color picker section  */
+#nav{
+    display: flex;
+    color: aqua;
+    font-weight: 900;
+    margin: 10px 20px;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+#datepick{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:cyan;
+    border: 2px black solid;
+}
+#colorpicker{
+    width: 30px;
+    border: 5px black solid;
+}
+
 h1{
     font-size: 3rem;
     color: white;
     text-shadow: 8px 4px black ;    
 }
 body{
-    background-color: blue;   
+    background-color:  rgb(168 172 197 / 88%);
+
 }
 #todo{
+    border-radius: 10px;
+    box-shadow: 10px 10px black;
+    background-color: rgb(166, 166, 223);
     position: absolute;
     border: 2px solid white;
     max-width: 500px;
@@ -75,11 +118,18 @@ body{
 .lists{
     padding: 10px;
     display: flex;
-    border-bottom: 10px blue solid;
+    
+    border-bottom: 2px blue solid; 
     padding-left: 20px;
     align-items: center;
     justify-content: space-between;
 }
+.lists:hover{
+    border: 2px solid black;
+    border-radius: 5px;
+    /* background-color: black; */
+}
+
 .delbtn{
     padding: 3px 5px;
     color: white;
